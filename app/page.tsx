@@ -120,6 +120,27 @@ const products = [
     href: "https://www.microsoft.com/en-us/microsoft-365/excel",
     className: "product-logo",
   },
+  {
+    name: "Microsoft Power Automate",
+    category: "Workflow & business-process automation",
+    image: asset("/products/power-automate.svg"),
+    href: "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+    className: "product-logo",
+  },
+  {
+    name: "OpenAI API Integration",
+    category: "AI agents, extraction & intelligent automation",
+    image: asset("/products/openai.png"),
+    href: "https://openai.com/api/",
+    className: "product-wide",
+  },
+  {
+    name: "ESP32 Hardware",
+    category: "Connected devices & operational signals",
+    image: asset("/products/esp32.webp"),
+    href: "https://www.espressif.com/en/products/socs/esp32",
+    className: "product-wide",
+  },
 ];
 
 const expertise = [
@@ -361,13 +382,43 @@ export default function Home() {
           <div className="section-label">LET’S BUILD SOMETHING USEFUL</div>
           <h2>Have an ERP problem with too many moving parts?</h2>
           <p>I’m most useful where finance, operations and technology need to agree on one workable answer.</p>
+          <div className="contact-actions">
+            <a className="button button-light" href="mailto:akshaytax2014@gmail.com">akshaytax2014@gmail.com <span aria-hidden="true">↗</span></a>
+            <a href="tel:+917083148500">+91 70831 48500</a>
+            <a href={asset("/Akshay_Gatkal_ERP_Resume.pdf")} download>Download résumé <span aria-hidden="true">↓</span></a>
+            <a href="https://akshay-gatkal.gitbook.io/akshay-gatkal-finance-and-technology" target="_blank" rel="noreferrer">Writing & notes <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div className="contact-actions">
-          <a className="button button-light" href="mailto:akshaytax2014@gmail.com">akshaytax2014@gmail.com <span aria-hidden="true">↗</span></a>
-          <a href={asset("/Akshay_Gatkal_ERP_Resume.pdf")} download>Download résumé <span aria-hidden="true">↓</span></a>
-          <a href="tel:+917083148500">+91 70831 48500</a>
-          <a href="https://akshay-gatkal.gitbook.io/akshay-gatkal-finance-and-technology" target="_blank" rel="noreferrer">Writing & notes <span aria-hidden="true">↗</span></a>
-        </div>
+        <form className="contact-form" action="https://formsubmit.co/akshaytax2014@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry from Akshay Gatkal profile website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://akshaythefintechguy.github.io/akshaygatkal.github.io/?sent=1#contact" />
+          <input className="form-honey" type="text" name="_honey" tabIndex={-1} autoComplete="off" />
+          <div className="form-heading">
+            <span>QUICK CONTACT</span>
+            <h3>Send me a message</h3>
+          </div>
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" autoComplete="name" required />
+          </label>
+          <div className="form-row">
+            <label>
+              <span>Email</span>
+              <input type="email" name="_replyto" autoComplete="email" required />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" autoComplete="tel" />
+            </label>
+          </div>
+          <label>
+            <span>How can I help?</span>
+            <textarea name="message" rows={4} required />
+          </label>
+          <button className="button form-submit" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+          <p className="form-note">Your details will be emailed directly to Akshay.</p>
+        </form>
       </section>
 
       <footer>
