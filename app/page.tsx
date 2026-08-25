@@ -125,21 +125,21 @@ const products = [
     category: "Workflow & business-process automation",
     image: asset("/products/power-automate.svg"),
     href: "https://www.microsoft.com/en-us/power-platform/products/power-automate",
-    className: "product-logo",
+    className: "product-contained",
   },
   {
     name: "OpenAI API Integration",
     category: "AI agents, extraction & intelligent automation",
     image: asset("/products/openai.png"),
     href: "https://openai.com/api/",
-    className: "product-wide",
+    className: "product-contained",
   },
   {
     name: "ESP32 Hardware",
     category: "Connected devices & operational signals",
     image: asset("/products/esp32.webp"),
     href: "https://www.espressif.com/en/products/socs/esp32",
-    className: "product-wide",
+    className: "product-contained",
   },
 ];
 
